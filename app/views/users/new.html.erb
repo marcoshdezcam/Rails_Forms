@@ -10,7 +10,8 @@
    <input type="password" id="password" name="user[password]"><br><br>
    <input type="submit" value="Submit">
    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
- </form> 
+ </form>
+
 <%= form_tag("/users", method: "post") do %>
   <%= label_tag(:username, "username:") %>
   <%= text_field_tag(:username) %><br><br>

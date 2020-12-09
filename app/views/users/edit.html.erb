@@ -1,7 +1,6 @@
 <h1>Edit user</h1>
 
-
-<%= form_for :user do |f| %>
+<%= form_for @user do |f| %>
     <p>
         Your username here:<br>
         <%= f.text_field :username, value: "che & marcos" %>
