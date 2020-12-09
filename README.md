@@ -1,6 +1,8 @@
 # Bare Metal Forms and Helpers
 
 > This project aims at building  a basic form using ruby on rails framework. The basic operations that can be performed by a user is creating and editing his/her information.
+
+![screenshot](./app/assets/images/Screenshot from 2020-12-09 23-02-18.png)
 ## Getting started
 
 You'll need to have both Ruby and Rails installed on your computer.
