@@ -1,7 +1,7 @@
 <%
 =begin %>
- <form action="/users" method="POST" accept-charset="utf-8">
-   <label for="username">Username:</label>
+ <form action="user_path" method="POST" accept-charset="utf-8">
+   <label for=user[username]>Username:</label>
    <input type="text" id="username" name="user[username]"><br><br>
    <label for="email">Email:</label>
    <input type="text" id="email" name="user[email]"><br><br>
@@ -37,15 +37,15 @@
 <% end %>
 <div>
     <div>
-        Your username here:<br>
+    <%= f.label :your_username_here %><br>
         <%= f.text_field :username, value: "che & marcos" %>
     </div>
     <div>
-        Your email here:<br>
+    <%= f.label :your_email_here %> <br>
         <%= f.email_field :email, placeholder: "example@example.com" %>
     </div>
     <div>
-        <%= f.label :password %><br>
+    <%= f.label :your_password_here %> <br>
         <%= f.password_field :password %>
     </div>
     <%= f.submit "Create" %>
